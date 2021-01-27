@@ -1,0 +1,59 @@
+* {
+	box-sizing: border-box !important;
+}
+
+body {
+	background-image: url(images/weather.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.container {
+	background-color: rgb(255, 194, 153, 0.5);
+	text-align: center;
+	padding-bottom: 20px !important;
+}
+
+.location {
+	margin-top: 20px;
+}
+
+h1 {
+	text-align: center;
+	font-family: "Kaushan Script", cursive, sans-serif;
+	margin-bottom: 20px !important;
+	padding-top: 20px !important;
+}
+
+p,
+#date {
+	font-family: "Roboto", sans-serif;
+	margin-bottom: 10px !important;
+	font-size: 1.5em;
+}
+
+input[type=search] {
+	border-radius: 25px;
+	height: 40px;
+	width: 350px;
+	padding-left: 20px;
+	border: none;
+}
+
+input[type=search]:focus {
+	background-color: rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (max-width: 600px) {
+	input[type=search] {
+		width: 95% !important;
+		margin: 0 auto !important;
+	}
+	.container {
+		display: block !important;
+		margin: auto !important;
+		max-width: 100% !important;
+	}
+}
